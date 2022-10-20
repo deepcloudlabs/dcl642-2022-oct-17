@@ -1,0 +1,20 @@
+{
+  "name": "pubsub-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "trades-consumer-rabbitmq": "node trades-rabbit-consumer.js",
+    "trades-producer-rabbitmq": "node binance-websocket-client-rabbitmq.js",
+    "trades-consumer-kafka": "node trades-kafka-consumer.js",
+    "trades-producer-kafka": "node binance-websocket-client-kafka.js"
+  },
+  "author": "Binnur Kurt <binnur.kurt@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "nodemon": "^2.0.20",
+    "ws": "^8.9.0",
+    "kafkajs": "^2.2.2"
+  }
+}
